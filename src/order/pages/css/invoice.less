@@ -1,0 +1,165 @@
+@import url('./lib/common.less');
+.am-list{
+    width: 100%;
+    .am-list-body{
+        background: #F5F5F5;
+        overflow-y: hidden;
+        border-bottom: 0;
+        border-top: 0;
+        .am-list-item{
+            margin-top: .2rem;
+            .am-list-line{
+                border-bottom: 0;
+                .am-list-content{
+                    font-size: .3rem;
+                    color: #353535;
+                }
+                .am-input-control{
+                    input{
+                        font-size: .28rem;
+                        color: #555;
+                    }
+                }
+                .am-list-extra{
+                    overflow: auto;
+                    max-height: none;
+                    font-size: .28rem;
+                    color: #717171;
+                }
+                .am-input-clear{
+                    width: .32rem;
+                    height: .32rem;
+                    background-color: #D1A783;
+                    background-image: url('../img/close.png');
+                    background-size: .32rem auto;
+                    background-position: 0;
+                }
+            }
+        }
+        .am-list-item:last-child{
+            .am-list-line{
+                border-bottom: 0;
+            }
+        }
+        .am-list-item.right-flex-item{
+            .am-list-line{
+                .am-list-content{
+                    .flex-unset;
+                }
+                .am-list-extra{
+                    .flex;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+.invoice-header-container{
+    .am-list-body{
+        .am-list-item{
+            margin-top: .2rem;
+            .am-list-line{
+                // border-bottom: 1px solid #f1f2f6;
+                .am-list-content{
+                    font-size: .3rem;
+                    color: #353535;
+                    .flex-unset;
+                }
+                .am-input-control{
+                    input{
+                        font-size: .28rem;
+                        color: #555;
+                    }
+                }
+                .am-list-extra{
+                    .flex;
+                    .invoice-header-checkbox{
+                        .flex-box;
+                        .am-checkbox-wrapper{
+                            font-size: .28rem;
+                            color: #717171;
+                            .am-checkbox{
+                                width: .32rem;
+                                height: .32rem;
+                                margin-left: .3rem;
+                                margin-right: .12rem;
+                                margin-top: -0.04rem;
+                                .am-checkbox-inner{
+                                    width: 100%;
+                                    height: 100%;
+                                    border: 0;
+                                    background: url('../img/unchecked.png') no-repeat;
+                                    background-size: 100%;
+                                }
+                            }
+                            .am-checkbox-checked{
+                                .am-checkbox-inner{
+                                    background: url('../img/loop_checked.png') no-repeat;
+                                    background-size: 100%;
+                                    border: 0;
+                                }
+                                .am-checkbox-inner::after{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.invoice-header-content{
+    .am-list-body{
+        .am-list-item{
+            margin-top: 0;
+            .am-list-line{
+                border-top: 1px solid #f1f2f6;
+                .am-list-content{
+                    font-size: .3rem;
+                    color: #353535;
+                    .flex-unset;
+                }
+                .am-input-control{
+                    input{
+                        font-size: .28rem;
+                        color: #555;
+                    }
+                }
+            }
+        }
+    }
+}
+.am-switch{
+    input[type="checkbox"]:checked+.checkbox{
+        background: #D1A783;
+        // width: 1.02rem;
+        // height: .62rem;
+    }
+}
+.am-button{
+    background: #D1A783;
+    margin-top: .3rem;
+    border: 0;
+    span{
+        font-size: .34rem;
+        color: #FFFFFF;
+    }
+    &.gray{
+        background: #E2E1E1;
+    }
+}
+.invoice-container{
+    width: 100%;
+    height: 100%;
+   .am-list{
+
+   } 
+   .am-button{
+       width: 100%;
+       border-radius: 0;
+       position: fixed;
+       bottom: 0;
+       left: 0;
+   }
+}

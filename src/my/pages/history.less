@@ -1,0 +1,127 @@
+@import url('./lib/common.less');
+.history-container{
+    height: 100%;
+    .flex-box;
+    .flex-column;
+    .history-tip{
+        .flex-box;
+        padding: 0 .3rem;
+        background: #f5f5f5;
+        .history-tip-text{
+            display: block;
+            font-size: .26rem;
+            color: #A3A3A3;
+            line-height: .86rem;
+            .flex;
+        }
+        .history-tip-eidt{
+            display: block;
+            font-size: .3rem;
+            color: #BE824E;
+            line-height: .86rem;
+        }
+    }
+    .list-view-container{
+        .flex;
+        overflow: hidden;
+        .am-list-header{
+            display: none;
+        }
+        .am-list-body{
+            background: #f5f5f5;
+            border-top: 0;
+            border-bottom: 0;
+            .sticky-container{
+                padding-left: 0;
+                margin-top: .2rem;
+                .am-list-item{
+                    border-bottom: 1px solid #f1f2f6;
+                    padding: 0;
+                    min-height: 0;
+                    .am-list-line{
+                        border-bottom: 0;
+                        padding: 0;
+                        .am-list-content{
+                            padding: 0;
+                            .sticky{
+                                height: 1rem;
+                                line-height: 1rem;
+                                font-size: .3rem;
+                                color: #353535;
+                                background: #fff;
+                                padding-left: .3rem;
+                                top: .86rem;
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(1){
+                    margin-top: 0;
+                }
+            }
+            .sticky-container.isMergeSection{
+                margin-top: 0;
+                .am-list-item{
+                    border-bottom: 0;
+                    .sticky{
+                        display: none;
+                    }
+                    .isSticky{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .history-footer{
+        width: 100%;
+        .flex-box;
+        .history-footer-left{
+            .flex-box;
+            .flex-center;
+            padding-left: .3rem;
+            padding-right: .3rem;
+            background: #F9FAFB;
+            .am-checkbox-wrapper{
+                font-size: .28rem;
+                color: #555555;
+                .am-checkbox{
+                    width: .32rem;
+                    height: .32rem;
+                    margin-right: .2rem;
+                    .am-checkbox-inner{
+                        width: .32rem;
+                        height: .32rem;
+                        border: 0;
+                        background: url('../img/unchecked.png') no-repeat;
+                        background-size: 100%;
+                    }
+                    .am-checkbox-inner::after{
+                        display: none;
+                        width: 0;
+                    }
+                }
+                .am-checkbox-checked{
+                    .am-checkbox-inner{
+                        background: url('../img/checked.png') no-repeat;
+                        background-size: 100%;
+                    }
+                }
+            }
+            .history-footer-left-text{
+                display: block;
+                line-height: .98rem;
+                font-size: .28rem;
+                color: #555555;
+            }
+        }
+        .history-footer-btn{
+            .flex;
+            height: .98rem;
+            background: #D1A783;
+            font-size: .3rem;
+            color: #fff;
+            border-radius: 0;
+        }
+    }
+}

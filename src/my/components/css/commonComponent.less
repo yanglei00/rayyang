@@ -1,0 +1,402 @@
+@import '../../pages/css/lib/common.less';
+// maybeyoulove-list-item
+.maybeYouLove-list-wrap{
+    width: 100%;
+    padding-left: .15*2rem;
+    padding-top: .15*2rem;
+    box-sizing: border-box;
+    background: #fff;
+    overflow: auto;
+    .list-row{
+        overflow: hidden;
+        .list-item{
+            width: 50%;
+            padding-right: .15*2rem;
+            box-sizing: border-box;
+            float: left;
+            dl{
+                width: 100%;
+                padding-bottom: .12*2rem;
+                box-sizing: border-box;
+                dt{
+                    position: relative;
+                    img{
+                        display: block;
+                        width: 100%;
+                        // height: 1*2rem;
+                    }
+                    .tip{
+                        display: block;
+                        width: .15*2rem;
+                        // height: .58*2rem;
+                        padding: .02*2rem 0;
+                        box-sizing: border-box;
+                        font-size: .09*2rem;
+                        color: #BE824E;
+                        background: rgba(255,255,255,0.9);
+                        border: 1px solid #BE824E;
+                        border-radius: 1px;
+                        position: absolute;
+                        top: .06*2rem;
+                        left: .06*2rem;
+                        text-align: center;
+                    }
+                    .bank-tip{
+                        display: block;
+                        width: .72*2rem;
+                        height: .32*2rem;
+                        font-size: .22*2rem;
+                        color: #fff;
+                        text-align: center;
+                        line-height: .32*2rem;
+                        position: absolute;
+                        right: 0;
+                        top: .12*2rem;
+                        background: url('../img/bank-tip.png') no-repeat;
+                        background-size: 100%;
+                    }
+                }
+                dd{
+                    p{
+                        text-align: left;
+                        &:nth-of-type(1){
+                            height: .36*2rem;
+                            line-height: .36*2rem;
+                            background: #F9F2EC;
+                            border-radius: 0 0 .04*2rem .04*2rem;
+                            font-size: .12*2rem;
+                            color: #BE824E;
+                            overflow: hidden;
+                            text-overflow:ellipsis;
+                            white-space: nowrap;
+                            padding-left: .1*2rem;
+                            box-sizing: border-box;
+                        }
+                        &:nth-of-type(2){
+                            width: 100%;
+                            overflow: hidden;
+                            margin-top: .06*2rem;
+                            span{
+                                display: block;
+                                margin-right: .1*2rem;
+                                color: #fff;
+                                // height: .16*2rem;
+                                // line-height: .16*2rem;
+                                box-sizing: border-box;
+                                float: left;
+                                background: #d1a783;
+                                font-size: .11*2rem;
+                                border-radius: 2px;
+                                padding: 0.02*2rem .07*2rem;
+                            }
+                        }
+                        &:nth-of-type(3){
+                            height: .28*2rem;
+                            line-height: .28*2rem;
+                            font-size: .14*2rem;
+                            color: #555;
+                            overflow: hidden;
+                            text-overflow:ellipsis;
+                            white-space: nowrap;
+                        }
+                        &:nth-of-type(4){
+                            height: .25*2rem;
+                            line-height: .25*2rem;
+                            font-size: .12*2rem;
+                            span{
+                                &:nth-of-type(1){
+                                    color: #BE824E;
+                                    margin-right: .15*2rem;
+                                }
+                                &:nth-of-type(2){
+                                    color: #A3A3A3;
+                                    text-decoration: line-through;
+                                }
+                            }
+                            
+                        }
+                        &:nth-of-type(5){
+                            line-height: .26*2rem;
+                            font-size: .12*2rem;
+                            color: #555;
+                            span{
+                                &:nth-of-type(1){
+                                    margin-right: .15*2rem;
+                                }   
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// maybeyoulove-list
+.maybeYouLove-list-container{
+    width: 100%;
+    .maybeYouLove-list-top{
+        .maybeYouLove-list-logo{
+            height: 1.4*2rem;
+            margin: .3*2rem auto 0;
+            text-align: center;
+            img{
+                display: inline-block;
+                height: 100%;
+            }
+        }
+        .maybeYouLove-list-text{
+            line-height: .2*2rem;
+            font-size: .14*2rem;
+            color: #717171;
+            margin: .15*2rem 0 .3*2rem;
+            text-align: center;
+        }
+    }
+    .maybeYouLove-list-title{
+        background: #fff;
+        vertical-align: middle;
+        padding-top: .15*2rem;
+        text-align: center;
+        line-height: .22*2rem;
+        span{
+            font-size: .16*2rem;
+            color: #555555;
+        }
+        img{
+            display: inline-block;
+            width: .16*2rem;
+            height: .16*2rem;
+            margin-right: .06*2rem;
+            vertical-align: -0.02*2rem;
+        }
+    }
+    .maybeYouLove-list-content{
+        .maybeYouLove-list-banner{
+            width: 100%;
+            height: 1.5*2rem;
+            margin-bottom: .1*2rem;
+            .swiper-container{
+                width: 100%;
+                height: 100%;
+                .swiper-wrapper{
+                    width: 100%;
+                    height: 100%;
+                    .swiper-slide{
+                        width: 100%;
+                        height: 100%;
+                        a{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+                .swiper-pagination{
+                    
+                }
+                .swiper-pagination-bullets{
+                    text-align: right;
+                    padding: .05*2rem .15*2rem .05*2rem .05*2rem;
+                    box-sizing: border-box;
+                    .swiper-pagination-bullet{
+                        width: .07*2rem;
+                        height: .07*2rem;
+                        margin: 0 .04*2rem;
+                        &.swiper-pagination-bullet-active{
+                            background-color: #D1A783;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// prodocut-list-item
+.product-list-item-container{
+    width: 100%;
+    padding-left: .3rem;
+    background: #fff;
+    .product-list-item-wrap{
+        padding: .3rem .3rem .3rem 0;
+        border-bottom: 1px solid #f1f2f6;
+        .flex-box;
+        .product-list-item-checkbox{
+            .flex-box;
+            .flex-mid;
+            .flex-center;
+            .am-checkbox-wrapper{
+                font-size: .28rem;
+                color: #555555;
+                .am-checkbox{
+                    width: .32rem;
+                    height: .32rem;
+                    margin-right: .3rem;
+                    .am-checkbox-inner{
+                        width: .32rem;
+                        height: .32rem;
+                        border: 0;
+                        background: url('../img/unchecked.png') no-repeat;
+                        background-size: 100%;
+                    }
+                    .am-checkbox-inner::after{
+                        display: none;
+                        width: 0;
+                    }
+                }
+                .am-checkbox-checked{
+                    .am-checkbox-inner{
+                        background: url('../img/checked.png') no-repeat;
+                        background-size: 100%;
+                    }
+                }
+            }
+        }
+        .product-list-item-pic{
+            display: block;
+            width: 2.1rem;
+            height: 2.1rem;
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .product-list-item-desc{
+            .flex;
+            padding-left: .3rem;
+            position: relative;
+            .product-list-item-name{
+                font-size: .28rem;
+                color: #353535;
+                line-height: .42rem;
+                .line(2)
+            }
+            .product-list-item-price-wrap{
+                line-height: .42rem;
+                position: absolute;
+                bottom: 0;
+                .product-list-item-price{
+                    font-size: .3rem;
+                    color: #BE824E;
+                }
+                .product-list-item-oldPrice{
+                    font-size: .24rem;
+                    color: #A3A3A3;
+                    margin-left: .2rem;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}
+// 空买家秀列表页
+.not-data-container{
+    width: 100%;
+    .not-data-content{
+        padding-top: 45%;
+        text-align: center;
+        .not-data-logo{
+            width: 1.54rem;
+            height: 2.76rem;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .not-data-btn{
+            margin-top: .3rem;
+            .flex-box;
+            .flex-center;
+            span{
+                display: block;
+                padding: .12rem .2rem;
+                font-size: .24rem;
+                color: #fff;
+                background: #D1A783;
+                border-radius: 2px;
+                margin: 0 auto;
+
+            }
+        }
+    }
+
+}
+// imgCode
+.imgCode-container{
+    width: 1.52rem;
+    height: .54rem;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.messageCode-container.am-button{
+    background: #D1A783;
+    border-radius: 5px;
+    margin-top: 0;
+    border: 0;
+    span{
+        font-size: .28rem;
+        color: #FFFFFF;
+    }
+}
+// 分享蒙层
+.share-mask-container{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.30);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    z-index: 9999;
+    .share-mask-tip{
+        text-align: right;
+    }
+    .share-mask-bottom{
+        width: 100%;
+        .share-mask-content{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: .3rem;
+            .flex-box;
+            height: 3.3rem;
+            padding: 0 .3rem;
+            box-sizing: border-box;
+            .share-mask-title{
+                width: .96rem;
+                line-height: .4rem;
+                border-right: 1px solid #E2E1E1;
+                text-align: center;
+                font-size: .28rem;
+                color: #555555;
+                background: #fff;
+                padding-top: 1.04rem;
+                border-top-left-radius: .06rem;
+                border-bottom-left-radius: .06rem;
+            }
+            .share-mask-icons{
+                .flex;
+                overflow: hidden;
+                background: #fff;
+                border-top-right-radius: .06rem;
+                border-bottom-right-radius: .06rem;
+                img{
+                    display: block;
+                    width: .9rem;
+                    height: .9rem;
+                    margin: .5rem .29rem 0;
+                    float: left;
+                }
+            }
+        }
+    }
+}

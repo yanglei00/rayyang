@@ -1,0 +1,39 @@
+.zhbImgCarousel {
+    height: 3.6rem !important;
+    img {
+        width: 100%!important;
+        height: 3.6rem!important;
+    }
+    .am-carousel-wrap{
+        padding-right: .3rem;
+        padding-bottom: .2rem;
+            text-align: right;
+    }
+    .am-carousel-wrap-dot {
+    	&:last-of-type{
+            	>span{margin-right: 0;}
+            }
+        >span {
+        	height: .14rem;
+        	width: .14rem;
+            margin: 0;
+            margin-right: .2rem;
+            background-color: transparent;
+            border-color: rgba(255, 255, 255, 0.7);
+            border-style: solid;
+            border-width: 1px;
+
+        }
+    }
+    .am-carousel-wrap-dot-active{
+    	>span{
+    		background-color: #BE824E;
+            border-color: #BE824E;
+            border-style: solid;
+            border-width: 1px;
+    	}
+    }
+    .am-carousel-wrap-dot .am-carousel-wrap {
+        text-align: right;
+    }
+}

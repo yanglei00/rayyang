@@ -1,0 +1,165 @@
+.buyerOrderItem {
+    margin: .2rem 0;
+    background: #ffffff;
+    height: 3.7rem;
+    padding: .3rem;
+    box-sizing: border-box;
+    .goodInfo {
+        margin-bottom: .3rem;
+        position: relative;
+        .tip_wrap{
+            background-color: rgba(53,53,53,.45);
+            width: 1.2rem;
+            height: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius:.6rem;
+            text-align: center;
+            line-height: 1.2rem;
+            color:#ffffff;
+            left: .6rem;
+            top: .6rem;
+            &.will{
+                background-color: rgba(190,130,78,0.60);
+            }
+        }
+        .goodDetail {
+            margin-left: .3rem;
+            height: 2.4rem;
+            .line {
+                display: -webkit-box;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-all;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                max-width: 4.2rem;
+            }
+            .title {
+                font-size: .28rem;
+                color: #353535;
+                line-height: .4rem;
+                margin-bottom: .12rem;
+                padding: 0;
+                border: none;
+            }
+            .sub {
+                font-size: .24rem;
+                color: #717171;
+                line-height: .34rem;
+                margin-bottom: .2rem;
+            }
+            .price {
+                margin-bottom: .2rem;
+                height: .42rem;
+                font-size: .24rem;
+                color: #717171;
+                line-height: .34rem;
+                .text{
+                    margin-left: .12rem;
+                }
+                .currentprice {
+
+                    font-size: .3rem;
+                    color: #BE824E;
+                    line-height: .42rem;
+                }
+                .oldprice {
+                    font-size: .24rem;
+                    color: #A3A3A3;
+                    margin-left: .2rem;
+                }
+                .buyNum {
+                    font-size: .24rem;
+                    color: #A3A3A3;
+                    float: right;
+                }
+            }
+            .sale {
+                line-height: .4rem;
+                overflow: visible;
+                .stock {
+                    display: inline-block;
+                    width: 1.6rem;
+                    text-align: center;
+                    height: .4rem;
+                    font-size: .2rem;
+                    color: #BE824E;
+                    line-height: .38rem;
+                    box-sizing: border-box;
+                    border: 1px solid #BE824E;
+                    border-radius: .2rem;
+                    background-image: url(../img/stockbg.png);
+                    background-repeat: no-repeat;
+
+                    &.sec{
+                        position: relative;
+                        top: .12rem;
+                    }
+                }
+                .empty {
+                    display: inline-block;
+                    width: 1.6rem;
+                    text-align: center;
+                    height: .4rem;
+                    font-size: .2rem;
+                    color: #a3a3a3;
+                    line-height: .38rem;
+                    box-sizing: border-box;
+                    border: 1px solid #a3a3a3;
+                    border-radius: .2rem;
+                    &.sec{
+                        position: relative;
+                        top: .12rem;
+                    }
+                }
+                em {
+                    margin-left: .2rem;
+                    font-size: .24rem;
+                    color: #555555;
+                    font-style: normal;
+                }
+                a {
+                    display: block;
+                    float: right;
+                    width: 1.6rem;
+                    height: .56rem;
+                    line-height: .56rem;
+                    background-color: #D1A783;
+                    border-radius: .06rem;
+                    color: #ffffff;
+                    font-size: .28rem;
+                    text-align: center;
+                    position: relative;
+                    top: .04rem;
+                }
+            }
+        }
+        img {
+            display: block;
+            height: 2.4rem;
+            width: 2.4rem;
+        }
+    }
+
+    .orderInfo {
+        height: .4rem;
+        line-height: .4rem;
+        font-size: .28rem;
+        color: #353535;
+        .tip {
+            margin-left: .2rem;
+        }
+        .time {
+            font-size: .24rem;
+            float: right;
+        }
+    }
+}
+.SecklillOrderItem{
+    border-bottom: 1px solid #f1f2f6;
+    margin: 0;
+    height: 3rem;
+    padding-left: 0;
+}

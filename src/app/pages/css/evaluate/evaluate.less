@@ -1,0 +1,197 @@
+@import url('../lib/common.less');
+
+.evaluate-container{
+    width: 100%;
+    height: 100%;
+    .flex-box;
+    .flex-column;
+    .evaluate-content{
+        .flex;
+        overflow: auto;
+        .evaluate-grade-container{
+            width: 100%;
+            background: #fff;
+            .evaluate-grade-title{
+                line-height: 1rem;
+                font-size: .3rem;
+                color: #353535;
+                border-bottom: 1px solid #E2E1E1;
+                padding-left: .3rem;
+            }
+            ul{
+                padding: .3rem;
+                li{
+                    line-height: .4rem;
+                    margin-bottom: .3rem;
+                    .flex-box;
+                    .evaluate-grade-text{
+                       font-size: .28rem;
+                       color: #555555; 
+                    }
+                    .evaluate-grade-rating{
+                        .flex;
+                        padding-left: .3rem;
+                        line-height: .4rem;
+                        img{
+                            width: .36rem;
+                            height: .36rem;
+                            margin-right: .2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .evaluate-footer{
+        width: 100%;
+        .flex-box;
+        .evaluate-footer-left{
+            .flex;
+            .flex-box;
+            .flex-center;
+            padding-left: .3rem;
+            background: #F9FAFB;
+            .am-checkbox-wrapper{
+                font-size: .28rem;
+                color: #555555;
+                .am-checkbox{
+                    width: .32rem;
+                    height: .32rem;
+                    margin-right: .2rem;
+                    .am-checkbox-inner{
+                        width: .32rem;
+                        height: .32rem;
+                        border: 0;
+                        background: url('../../img/unchecked.png') no-repeat;
+                        background-size: 100%;
+                    }
+                    .am-checkbox-inner::after{
+                        display: none;
+                        width: 0;
+                    }
+                }
+                .am-checkbox-checked{
+                    .am-checkbox-inner{
+                        background: url('../../img/checked.png') no-repeat;
+                        background-size: 100%;
+                    }
+                }
+            }
+            .evaluate-footer-left-text{
+                display: block;
+                line-height: .98rem;
+                font-size: .28rem;
+                color: #555555;
+            }
+        }
+        .evaluate-footer-btn{
+            width: 2.4rem;
+            height: .98rem;
+            background: #D1A783;
+            font-size: .3rem;
+            color: #fff;
+            border-radius: 0;
+        }
+    }
+}
+// 编辑列表
+.edit-item{
+    width: 100%;
+    background: #fff;
+    margin-bottom: .2rem;
+    .edit-item-header{
+        padding: .3rem;
+        border-bottom: 1px solid #f1f2f6;
+        .edit-item-header-content{
+            .flex-box;
+            .edit-item-header-pic{
+                img{
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+            .edit-item-header-text{
+                font-size: .28rem;
+                line-height: .4rem;
+                color: #353535;
+                padding: .3rem;;
+            }
+            .edit-item-header-rating{
+                padding-top: .3rem;
+                img{
+                    width: .36rem;
+                    height: .36rem;
+                    margin-right: .2rem;
+                }
+            }
+        }
+    }
+    .edit-item-body{
+        height: 2.3rem;
+        padding: .3rem;
+        textarea{
+            width: 100%;
+            height: 100%;
+            border: 0;
+            font-size: .28rem;
+            resize:none;
+        }
+    }
+    .edit-item-footer{
+        height: 2.4rem;
+        padding: 0 .3rem .3rem .3rem;
+        >div{
+            height: 100%;
+            .am-image-picker{
+                height: 100%;
+                .am-image-picker-list{
+                    margin: 0;
+                    padding: 0;
+                    .am-flexbox{
+                        width: 100%;
+                        margin-bottom: 0;
+                        display: block;
+                        overflow: hidden;
+                        .am-flexbox-item{
+                            width: 2.1rem;
+                            height: 2.1rem;
+                            margin-right: .2rem;
+                            float: left;
+                            border-radius: 2px;
+                            .am-image-picker-item-content{
+                                width: 2.1rem;
+                                height: 2.1rem;
+                            }
+                            .am-image-picker-item-remove{
+                                width: .32rem;
+                                height: .32rem;
+                                position: absolute;
+                                right: .04rem;
+                                top: 0.04rem;
+                                background: url('../../img/close.png') no-repeat center center;
+                                background-size: 100% 100%;
+                            }
+                            .am-image-picker-upload-btn{
+                                border: 0;
+                                background: #F5F5F5;
+                                input{
+                                    z-index: 9;
+                                }
+                                &::before{
+                                    width: 0;
+                                }
+                                &::after{
+                                    content: ' ';
+                                    width: .86rem;
+                                    height: .68rem;
+                                    background: url('../../img/photo.png') no-repeat center center;
+                                    background-size: 100% 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

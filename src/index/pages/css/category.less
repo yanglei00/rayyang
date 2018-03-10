@@ -1,0 +1,159 @@
+@import url('./lib/common.less');
+
+.category-container{
+    height: 100%;
+    .flex-box;
+    .flex-column;
+    .tabs-container{
+        .flex;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+.am-tabs.am-tabs-vertical{
+    .am-tabs-tab-bar-wrap{
+        .am-tabs-default-bar{
+            background: #F8F8F8!important; 
+            .am-tabs-default-bar-content{
+                background: #F8F8F8; 
+                .am-tabs-default-bar-tab{
+                    width: 1.76rem;
+                    height: 1rem!important;
+                    line-height: 1rem;
+                    border-right: 0;
+                    font-size: .28rem;
+                    color: #555555;
+                    padding: 0;
+                    text-align: center;
+                }
+                .am-tabs-default-bar-tab-active{
+                    height: 1rem!important;
+                    line-height: 1rem;
+                    background: #fff;
+                    color: #BE824E;
+                }
+            }
+        }
+    }
+    .am-tabs-content-wrap{
+        // overflow-x: hidden;
+        background: #fff;
+        .am-tabs-pane-wrap{
+            .category-tabpanel-container{
+                height: 100%;
+                background: #fff;
+            }
+        }
+    }
+}
+.category-tabpanel-container{
+    width: 100%;
+    height: 100%;
+    padding: .3rem 0rem 0 .3rem;
+    .category-tabpanel-banner{
+        width: 100%;
+        padding-right: .3rem;
+        .swiper-container{
+            width: 5.12rem;
+            height: 2rem;
+            .swiper-wrapper{
+                width: 100%;
+                height: 100%;
+                .swiper-slide{
+                    width: 100%;
+                    height: 100%;
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .swiper-pagination{
+                
+            }
+            .swiper-pagination-bullets{
+                text-align: right;
+                padding: .05*2rem .15*2rem .05*2rem .05*2rem;
+                box-sizing: border-box;
+                .swiper-pagination-bullet{
+                    width: .07*2rem;
+                    height: .07*2rem;
+                    margin: 0 .04*2rem;
+                    border-radius: 50%;
+                    &.swiper-pagination-bullet-active{
+                        background-color: #D1A783;
+                    }
+                }
+            }
+        }
+    }
+    .category-tabpanel-list{
+        background: #fff;
+        .category-tabpanel-item{
+            .category-tabpanel-item-title{
+                height: 1.04rem;
+                line-height: 1.04rem;
+                text-align: center;
+                font-size: .32rem;
+                color: #353535;
+                position: relative;
+            }
+            .category-tabpanel-item-title::before{
+                content: '';
+                display: block;
+                width: 1.04rem;
+                height: 1px;
+                background: #E2E1E1;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: .3rem;
+                margin: auto 0;
+
+            }
+            .category-tabpanel-item-title::after{
+                content: '';
+                display: block;
+                width: 1.04rem;
+                height: 1px;
+                background: #E2E1E1;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: .3rem;
+                margin: auto 0;
+
+            }
+            .category-tabpanel-item-content{
+                overflow: hidden;
+                .category-tabpanel-item-content-item{
+                    width: 1.5rem;
+                    float: left;
+                    margin-right: .3rem;
+                    margin-bottom: .3rem;
+                    overflow: hidden;
+                    img{
+                        display: block;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                    p{
+                        width: 100%;
+                        font-size: .24rem;
+                        color: #555555;
+                        line-height: .34rem;
+                        margin-top: .2rem;
+                        .line(1);
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

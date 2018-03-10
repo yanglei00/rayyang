@@ -1,0 +1,33 @@
+.buyerOrderDetail {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.buyerOrderDetail .flexwrap {
+  height: 100%;
+  width: 100%;
+}
+.buyerOrderDetail .am-flexbox .am-flexbox-item {
+  width: 100%;
+  margin-left: 0;
+  background: #ffffff;
+  padding-left: .3rem;
+  overflow-y: auto;
+}
+.buyerOrderDetail .am-flexbox .am-flexbox-item .orderListItem {
+  height: 1rem;
+  line-height: 1rem;
+  font-size: .28rem;
+  color: #555555;
+  padding-right: .3rem;
+  border-bottom: 1px #F1F2F6 solid;
+}
+.buyerOrderDetail .am-flexbox .am-flexbox-item .orderListItem .tip {
+  margin-left: .2rem;
+}
+.buyerOrderDetail .am-flexbox .am-flexbox-item .orderListItem .time {
+  font-size: .24rem;
+  float: right;
+}

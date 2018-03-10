@@ -1,0 +1,22 @@
+.choice {
+  background: #F5F5F5;
+}
+.choice .am-list-header,
+.choice .am-list-footer {
+  display: none;
+}
+.choice .am-list-body {
+  background-color: transparent;
+  border: none;
+}
+.choice .row-container {
+  padding: 0 .3rem;
+  margin: .2rem 0;
+  box-sizing: border-box;
+}
+.choice img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: .1rem;
+}

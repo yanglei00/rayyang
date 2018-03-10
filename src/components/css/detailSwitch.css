@@ -1,0 +1,20 @@
+.detailSwitch .topArea {
+  padding: .3rem;
+}
+.detailSwitch .topArea img {
+  width: 1.76rem;
+  height: 1.76rem;
+  vertical-align: middle;
+}
+.detailSwitch .btnArea .btnTitle {
+  font-size: .28rem;
+  color: #555555;
+  margin-bottom: .3rem;
+}
+.detailSwitch .btnArea .btnGroup span {
+  display: inline-block;
+  margin-bottom: .3rem;
+  margin-right: .3rem;
+  font-size: .24rem;
+  color: #555555;
+}

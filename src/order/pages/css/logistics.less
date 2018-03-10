@@ -1,0 +1,187 @@
+@import url('./lib/common.less');
+.logistics-container{
+    height: 100%;
+    overflow: auto;
+}
+.am-tabs{
+    .am-tabs-tab-bar-wrap{
+        .am-tabs-default-bar{
+            .am-tabs-default-bar-content{
+                .am-tabs-default-bar-tab{
+                    font-size: .28rem;
+                    color: #555555;
+                    border-bottom: 1PX solid #f1f2f6;
+                    padding: 0;
+                    height: .76rem;
+                    line-height: .76rem;
+                }
+                .am-tabs-default-bar-tab-active{
+                    color: #BE824E;
+                }
+                .am-tabs-default-bar-underline{
+                    border: 1px #f1f2f6 solid;
+                    &::before{
+                        background: #BE824E;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                    }
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .am-tabs-content-wrap{
+    }
+}
+.show-more-btn{
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    background: #fff;
+    position: relative;
+    .am-button{
+        display: block;
+        width: 2.12rem;
+        height: .6rem;
+        line-height: .6rem;
+        border: 1px solid #BE824E;
+        border-radius: 4px;
+        font-size: .28rem;
+        color: #BE824E;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+.logistics-info-wrap{
+    width: 100%;
+    background: #fff;
+    padding: .2rem .3rem;
+    border-bottom: 1px solid #f1f2f6;
+    margin-top: .2rem;
+    .logistics-company{
+        line-height: .34rem;
+        font-size: .24rem;
+        color: #353535;
+    }
+    .logistics-num{
+        line-height: .34rem;
+        font-size: .24rem;
+        color: #353535;
+        margin-top: .12rem;
+    }
+}
+.am-steps{
+    background: #fff;
+    .am-steps-item{
+        .am-steps-item-tail{
+            left: .38rem;
+            // padding: .3rem 0 .08rem 0;
+            background: #E2E1E1; 
+            &::after{
+                display: none;
+                background: #E2E1E1; 
+            }
+        }
+        .am-steps-item-icon{
+            width: .18rem;
+            height: .18rem;
+            background: #E2E1E1;
+            border-color: #E2E1E1;
+            margin-left: .3rem;
+            margin-right: .3rem;
+            margin-top: .3rem;
+            .am-steps-icon{
+                display: none;
+            }
+        }
+        .am-steps-item-content{
+            padding-top: .3rem;
+            border-bottom: 1px solid #f1f2f6;
+            .am-steps-item-title{
+                font-size: .28rem;
+                color: #A3A3A3;
+                line-height: .4rem;
+            }
+            .am-steps-item-description{
+                font-size: .28rem;
+                color: #A3A3A3;
+            }
+        }
+        &:first-child{
+            .am-steps-item-tail{
+                &::before{
+                    content: '';
+                    width: 1px;
+                    height: .64rem;
+                    background: #fff;
+                    position: absolute;
+                    top: 0;
+                }
+            }
+            .am-steps-item-icon{
+                width: .34rem;
+                height: .34rem;
+                background: url('../img/pay_current_location.png') no-repeat;
+                background-size: 100%;
+                border: 0;
+                margin-left: .22rem;
+                margin-right: .22rem;
+                margin-top: .3rem;
+                position: relative;
+                .am-steps-icon{
+                    display: none;
+                    position:absolute;
+                    z-index: 2;
+                }
+            }
+            .am-steps-item-content{
+                .am-steps-item-title{
+                    color: #BE824E;
+                }
+                .am-steps-item-description{
+                    color: #BE824E;
+                }
+            }
+        }
+        &:last-child{
+            .am-steps-item-tail{
+                display: block;
+            }
+        }
+    }
+}
+.no-logistics-container{
+    width: 100%;
+    height: 8rem;
+    background: #fff;
+    .flex-box;
+    .flex-column;
+    .flex-center;
+    .flex-mid;
+    .no-logistics-content{
+        width: 100%;
+        img{
+            display: block;
+            width: 1.83rem;
+            height: 2.8rem;
+            margin: 0 auto;
+        }
+        p{
+            width: 100%;
+            line-height: .4rem;
+            font-family: PingFangSC-Regular;
+            font-size: .28rem;
+            color: #717171;
+            text-align: center;
+            margin-top: .3rem;
+        }
+    }
+}

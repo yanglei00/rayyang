@@ -1,0 +1,119 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.lifeService {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: .28rem;
+  background: #F5F5F5;
+  overflow-y: auto;
+}
+.lifeService > div:nth-last-child(2) {
+  margin-bottom: 0;
+}
+.lifeService .lifeServiceMoudle {
+  padding-top: .3rem;
+  margin: .2rem 0;
+  background: #FFFFFF;
+}
+.lifeService .lifeServiceMoudle:last-of-type {
+  margin-bottom: 0;
+}
+.lifeService .lifeServiceMoudle .title {
+  height: .44rem;
+  line-height: .44rem;
+  font-size: .32rem;
+  color: #555555;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  border: none;
+}
+.lifeService .lifeServiceMoudle .title::before {
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: .02rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.01rem;
+  left: 1.6rem;
+  background: #E2E1E1;
+}
+.lifeService .lifeServiceMoudle .title::after {
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: .02rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.01rem;
+  right: 1.6rem;
+  background: #E2E1E1;
+}
+.lifeService .lifeServiceMoudle .content {
+  text-align: center;
+}
+.lifeService .lifeServiceMoudle .content .cube {
+  width: 33.33333333333%;
+  height: 33.33333333333vw;
+  float: left;
+  padding: .3rem;
+  box-sizing: border-box;
+}
+.lifeService .lifeServiceMoudle .content .cube img {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.lifeService .lifeServiceMoudle .content .cube p {
+  margin: 0;
+  margin-top: .2rem;
+  color: #555555;
+}
+.lifeService .lifeServiceMoudle .content:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.lifeService .more {
+  height: 1rem;
+  line-height: 1rem;
+  font-size: .28rem;
+  color: #a3a3a3;
+  text-align: center;
+  position: relative;
+}
+.lifeService .more::before {
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: .02rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.01rem;
+  left: 1.04rem;
+  background: #E2E1E1;
+}
+.lifeService .more::after {
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: .02rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.01rem;
+  right: 1.04rem;
+  background: #E2E1E1;
+}
